@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "io.ratpack:ratpack-gradle:1.4.4"
+    }
+}
+
+apply plugin: "io.ratpack.ratpack-groovy"
+
+run {
+    jvmArgs "-Dratpack.port=5051"
+    systemProperty "ratpack.reloadable", "true"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    runtime "org.slf4j:slf4j-simple:1.7.21"
+}

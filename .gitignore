@@ -1,0 +1,14 @@
+build
+.idea
+.gradle
+
+*.key
+
+.ropeproject
+
+.vagrant
+
+*.swp
+*.retry
+
+.DS_Store
