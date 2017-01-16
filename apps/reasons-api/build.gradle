@@ -15,6 +15,10 @@ run {
     systemProperty "ratpack.reloadable", "true"
 }
 
+task stage {
+    dependsOn installDist
+}
+
 repositories {
     jcenter()
 }

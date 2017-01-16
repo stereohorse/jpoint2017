@@ -1,8 +1,6 @@
-import org.slf4j.LoggerFactory
-
 import static ratpack.groovy.Groovy.ratpack
+import static ratpack.handling.RequestLogger.ncsa
 import static ratpack.jackson.Jackson.json
-
 
 def reasons = [
     "не тормозит хотя бы",
@@ -15,10 +13,12 @@ def random = new Random()
 
 ratpack {
     handlers {
-        get {
-            LoggerFactory.getLogger("reasons-api").info("requested reason")
+        all(ncsa())
 
-            render(json([value: reasons[random.nextInt(reasons.size())]]))
+        get {
+            def randomReason = reasons[random.nextInt(reasons.size())]
+
+            render(json([value: randomReason]))
         }
     }
 }

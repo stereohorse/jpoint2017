@@ -1,6 +1,5 @@
-import org.slf4j.LoggerFactory
-
 import static ratpack.groovy.Groovy.ratpack
+import static ratpack.handling.RequestLogger.ncsa
 import static ratpack.jackson.Jackson.json
 
 def names = [
@@ -12,10 +11,12 @@ def random = new Random()
 
 ratpack {
     handlers {
-        get {
-            LoggerFactory.getLogger("names-api").info("requested name")
+        all(ncsa())
 
-            render(json([value: names[random.nextInt(names.size())]]))
+        get {
+            def randomName = names[random.nextInt(names.size())]
+
+            render(json([value: randomName]))
         }
     }
 }

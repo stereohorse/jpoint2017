@@ -1,0 +1,57 @@
+[main] INFO ratpack.server.RatpackServer - Starting server...
+[main] INFO ratpack.server.RatpackServer - Building registry...
+[main] INFO ratpack.server.RatpackServer - Ratpack started for http://localhost:5052
+[ratpack-compute-1-8] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=ce674cd9-3c13-0365-965c-e83299df7992
+[ratpack-compute-1-3] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=92329b09-faa6-8f2c-7a63-a44c94631ab1
+[ratpack-compute-1-5] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=1ec6f58b-31e5-5092-c4a8-74e82c619f82
+[ratpack-compute-1-4] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 50 id=29cedb53-b8b9-d2c6-fdb3-0f9c2174ba26
+[ratpack-compute-1-7] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=8623004b-abf0-bbef-2aa3-4b3c36471749
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 50 id=80304983-6774-5a75-16b4-5a712b6fb26d
+[ratpack-compute-1-2] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 50 id=22b87f1e-6f1d-1128-9fb3-c59087e2b412
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=ae18011b-f418-351c-f9b5-593c6d0e8ad0
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=40eea447-293a-9b16-ca1c-f1ee450eae6c
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=016c0a1b-bcdf-0efd-2408-49cd054ef354
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 50 id=476a7788-4ad4-c988-fd78-2cb1ceec0ebb
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=b80e54d0-de1a-c1ed-78a6-061c6517831f
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=04cb7db2-c4f5-2a8e-9633-1ac4b7213f00
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=d454fce0-edf5-15d0-5bdb-6d514f47cb9e
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=7f8f9710-921f-5e74-35eb-090c759b4f14
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=b8acb57f-0e21-6e94-c8c9-f48da2dd92cc
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 50 id=76db2e92-5eee-fe21-293b-3ed94e1fed67
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 47 id=f677b924-aac5-ebdb-4d16-e037a7217ce0
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=11033b7d-a5de-17fd-ddcf-238666496e62
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:23 +0300] "GET / HTTP/1.1" 200 41 id=1d9fbf9c-0372-3b05-d68d-aeed2003480f
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=637bb7fc-59db-9ade-bd95-fe1d511725f3
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=85f80b21-2349-2a43-99f1-cb9e330a7e5d
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=a42d8c02-dac6-0080-b616-b57d5b7ac26b
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=b9ca1d14-e0d5-2b1f-d797-675dd1d1f1af
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=78e82ee0-69b3-0223-baa0-44860eef5426
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=296c0f18-5930-8193-38f4-967d52067a7e
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=cd1b4921-b279-ff35-ac28-591312757380
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=563f5472-d7e0-a25f-76f1-9adc83ce9d19
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=b033ef99-1002-16f0-8001-28c8b74389e8
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=d4cc0a89-65fc-9c10-dd4b-9d11a06777ba
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=5d9e5d1e-1fa0-d89c-11e0-d2a8e0e9176c
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=0f771344-e14f-447a-6d7d-c762d5567949
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=973bbceb-ef25-1057-a643-fcf2af389942
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=442c0923-9d9c-4e21-84ff-53eb0a7cd08b
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=609e9035-71c9-a189-ab9f-a52b6ea7f08a
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=527d065a-44e0-725e-3b14-7c822fc3d117
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=19fec294-868d-461f-7a36-d067b3c18625
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=24454ec2-ba5c-e4ee-d411-0ce1a89a5ae2
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=3531716e-0cae-1443-5ddb-4cfaec3203b5
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=8929dc0d-4b15-8ff9-384f-fb36fae36bcb
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=fbd0cd6d-39f6-ac99-2af5-ca6c151affc9
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=7b910c99-546b-bdd9-30ff-bc3164d9b339
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=1782d5c5-e9dc-c34f-ea76-447c6c8db33c
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=a687259d-82e5-1314-8ae8-74690699f489
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=c0b0dbba-163e-ecdc-f0a5-d7aa26f39e1a
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=bc29c0c5-1ea1-b800-293e-684d56e1c2bf
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=4650a630-6279-2d2b-7db7-fd45c90fd11d
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=6fe2cf12-6ed6-6d71-7475-bf16b1fb04f7
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 47 id=cdc315e6-0de0-8b9c-56ea-a1c8c2718fed
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=8266087b-f91a-9692-54bc-d11628b9fc7d
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 50 id=011728d5-930a-6deb-ad24-5b084596e87a
+[ratpack-shutdown-thread] INFO ratpack.server.RatpackServer - Stopping server...
+[ratpack-shutdown-thread] INFO ratpack.server.RatpackServer - Server stopped.
+[ratpack-compute-1-6] INFO ratpack.request - 127.0.0.1 - - [16/Jan/2017:19:08:24 +0300] "GET / HTTP/1.1" 200 41 id=b36325b0-45f0-28a3-6f6b-6b06ac01a989
