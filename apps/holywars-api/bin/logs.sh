@@ -3,4 +3,4 @@
 
 cd "$(dirname "$0")"
 touch ../logs.txt
-tail -f ../logs.txt
+tail -n 0 -f ../logs.txt

@@ -11,4 +11,12 @@ build
 *.swp
 *.retry
 
+*.bin
+*.html
+
+pid
+*.pid
+
+logs.txt
+
 .DS_Store

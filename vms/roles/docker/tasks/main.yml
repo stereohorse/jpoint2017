@@ -1,0 +1,34 @@
+- name: install apt-transport-https
+  apt: name=apt-transport-https update_cache=yes
+
+- name: install ca-certificates
+  apt: name=ca-certificates
+
+- name: install apt certificate
+  apt_key: 
+    keyserver: hkp://p80.pool.sks-keyservers.net:80
+    id: 58118E89F3A912897C070ADBF76221572C52609D
+
+- name: setup apt repository
+  apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-trusty main'
+
+- name: delete default docker repo
+  apt: name=lxc-docker state=absent purge=yes
+
+- name: install docker engine
+  apt: name=docker-engine update_cache=yes
+
+- name: install pip
+  apt: name=python-pip
+
+- name: install docker-py
+  pip: name=docker-py version=1.9.0
+
+- name: create 'docker' group
+  group: name=docker
+
+- name: append user 'vagrant' to 'docker' group
+  user:
+    name: vagrant
+    append: yes
+    groups: docker

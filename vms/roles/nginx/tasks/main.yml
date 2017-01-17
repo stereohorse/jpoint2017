@@ -1,0 +1,11 @@
+- name: start proxy
+  docker_container:
+    name: nginx
+    image: nginx
+    volumes:
+      - "/etc/nginx/conf.d:/etc/nginx/conf.d"
+    ports:
+      - "80:80"
+    env:
+      SERVICE_80_NAME: nginx
+      SERVICE_IGNORE: true

@@ -1,0 +1,22 @@
+- name: create bamboo config dir
+  file: path=/var/bamboo state=directory
+
+- name: copy bamboo config
+  template: src=config.json.j2 dest=/var/bamboo/config.json
+
+- name: copy haproxy template
+  template: src=haproxy_template.cfg.j2 dest=/var/bamboo/haproxy_template.cfg
+
+- name: start bamboo container
+  docker_container:
+    name: bamboo
+    image: 0x06065a/bamboo:0.2.21
+    restart: yes
+    ports:
+      - "8000:8000"
+      - "80:80"
+    env:
+      CONFIG_PATH: "/var/bamboo/config/config.json"
+      BAMBOO_DOCKER_AUTO_HOST: true
+    volumes:
+      - /var/bamboo:/var/bamboo/config

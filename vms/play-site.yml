@@ -1,0 +1,37 @@
+- hosts: docker
+  become: yes
+  roles:
+    - docker
+  tags: docker
+
+
+- hosts: vm1
+  become: yes
+  roles:
+    - nginx
+  tags: plain-nginx
+
+
+- hosts: consul
+  become: yes
+  roles:
+    - consul
+    - registrator
+    - nginx
+    - { role: consul-template, tags: ct }
+  tags: consul
+
+
+- hosts: mesos
+  become: yes
+  roles:
+    - zookeeper-mesos-marathon
+  tags: zmm
+
+
+- hosts: haproxy
+  become: yes
+  roles:
+    - { role: bamboo, tags: bamboo }
+    - { role: marathon-lb, tags: mlb }
+  tags: haproxy

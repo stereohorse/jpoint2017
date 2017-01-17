@@ -1,0 +1,20 @@
+- name: remove consul container
+  docker_container: name=consul state=absent
+  when: clean is defined and clean
+
+- name: start consul container
+  docker_container:
+    name: consul
+    image: consul
+    network_mode: host
+    env:
+      CONSUL_LOCAL_CONFIG: {"skip_leave_on_interrupt": true}
+      SERVICE_IGNORE: true
+    command: >
+      consul agent 
+      -server 
+      -bind={{ ansible_default_ipv4.address }} 
+      -client=0.0.0.0
+      -data-dir=/consul/data
+      -ui
+      -bootstrap

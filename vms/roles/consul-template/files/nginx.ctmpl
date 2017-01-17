@@ -1,0 +1,21 @@
+# dynamically generated nginx config
+
+{{range services -}}
+upstream {{.Name}} {
+  {{range service .Name -}}
+    server {{.Address}}:{{.Port}};
+  {{else}}
+    server localhost:60000;
+  {{end}}
+}
+
+{{end}}
+
+
+server {
+  {{range services}}
+  location /{{.Name}}/ {
+    proxy_pass http://{{.Name}}/;
+  }
+  {{end}}
+}

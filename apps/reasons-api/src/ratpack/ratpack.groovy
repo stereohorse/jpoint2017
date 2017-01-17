@@ -15,7 +15,7 @@ ratpack {
     handlers {
         all(ncsa())
 
-        get {
+        get("reason") {
             def randomReason = reasons[random.nextInt(reasons.size())]
 
             render(json([value: randomReason]))

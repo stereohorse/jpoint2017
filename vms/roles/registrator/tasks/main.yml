@@ -1,0 +1,12 @@
+- name: remove registrator container
+  docker_container: name=registrator state=absent
+  when: clean is defined and clean
+
+- name: start registrator container
+  docker_container:
+    name: registrator 
+    image: gliderlabs/registrator
+    network_mode: host
+    command: -ip {{ansible_eth0.ipv4.address}} consul://localhost:8500
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock

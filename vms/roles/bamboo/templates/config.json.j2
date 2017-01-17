@@ -1,0 +1,28 @@
+{
+  "Marathon": {
+    "Endpoint": "http://{{ ansible_eth1.ipv4.address }}:8080",
+    "UseEventStream": true
+  },
+
+  "Bamboo": {
+    "Endpoint": "http://{{ ansible_eth1.ipv4.address }}:8000",
+    "Zookeeper": {
+      "Host": "{{ ansible_eth1.ipv4.address }}:2181",
+      "Path": "/marathon-haproxy/state",
+      "ReportingDelay": 5
+    }
+  },
+
+  {% raw %}
+  "HAProxy": {
+    "TemplatePath": "/var/bamboo/config/haproxy_template.cfg",
+    "OutputPath": "/etc/haproxy/haproxy.cfg",
+    "ReloadCommand": "haproxy -f /etc/haproxy/haproxy.cfg -p /var/run/haproxy.pid -D -sf $(cat /var/run/haproxy.pid)",
+    "ReloadValidationCommand": "haproxy -c -f {{.}}"
+  },
+  {% endraw %}
+
+  "StatsD": {
+    "Enabled": false
+  }
+}

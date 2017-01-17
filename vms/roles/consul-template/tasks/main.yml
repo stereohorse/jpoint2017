@@ -1,0 +1,24 @@
+- name: remove consul-template container
+  docker_container: name=consul-template state=absent
+  when: clean is defined and clean
+
+- name: create template dir
+  file: path=/etc/consul-template state=directory mode=0777
+
+- name: copy nginx template
+  copy: src=nginx.ctmpl dest=/etc/consul-template/nginx.ctmpl mode=0777
+
+- name: start consul-template
+  docker_container:
+    name: consul-template
+    restart: yes
+    image: "0x06065a/consul-template:0.15.0"
+    env:
+      SERVICE_IGNORE: true
+    volumes:
+      - "/etc/consul-template:/etc/consul-template"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    command: 
+      consul-template 
+      -consul {{ansible_eth0.ipv4.address}}:8500
+      -template "/etc/consul-template/nginx.ctmpl:/etc/consul-template/site.conf:docker kill -s HUP nginx"

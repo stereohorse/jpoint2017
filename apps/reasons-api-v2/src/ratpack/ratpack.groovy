@@ -6,7 +6,7 @@ ratpack {
     handlers {
         all(ncsa())
 
-        get {
+        get("reason") {
             render(json([value: "мы обновили reasons-api!"]))
         }
     }
