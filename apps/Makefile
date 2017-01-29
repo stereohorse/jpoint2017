@@ -75,13 +75,33 @@ measure-plain-nginx:
 update-plain-nginx:
 	make run-reasons-api-v2-5054
 	make set-reasons-api-upstream
+	sleep 2s
 	make set-reasons-api-v2-location
+	make stop-reasons-api
+
+
+# --[ haproxy ] --
+
+measure-haproxy:
+	make run-reasons-api-5053
+	make set-reasons-api-ha
+	sleep 2s
+	echo 'starting test'
+	REPORT_NAME=haproxy make report & (sleep 1s && make update-haproxy)
+
+update-haproxy:
+	make run-reasons-api-v2-5054
+	make set-reasons-api-upstream-ha
+	sleep 3s
+	make set-reasons-api-v2-ha
+	make stop-reasons-api
+
 
 
 # --[ reporter ]--
 
 report:
-	echo "GET http://localhost:5050/holywar" | vegeta attack -duration=5s > $(REPORT_NAME).bin
+	echo "GET http://localhost:5050/holywar" | vegeta attack -rate=150 -duration=5s > $(REPORT_NAME).bin
 	cat $(REPORT_NAME).bin | vegeta report
 	cat $(REPORT_NAME).bin | vegeta report -reporter=plot > $(REPORT_NAME).html
 
@@ -111,20 +131,42 @@ init-plain-nginx: \
 	run-reasons-api-5053 \
 	run-holywars-api \
 	set-reasons-api-location
-	./nginx-start.sh
+	nginx/restart.sh
+
+init-haproxy: \
+	stop \
+	run-names-api \
+	run-reasons-api-5053 \
+	run-holywars-api \
+	set-reasons-api-ha
+	haproxy/restart.sh
+
 
 
 set-reasons-api-location:
-	cp nginx-config/reasons-api.conf /usr/local/etc/nginx/servers/nginx.conf
-	./nginx-reload.sh
+	cp nginx/reasons-api.conf /usr/local/etc/nginx/servers/nginx.conf
+	nginx/reload.sh
 
 set-reasons-api-upstream:
-	cp nginx-config/reasons-api-upstream.conf /usr/local/etc/nginx/servers/nginx.conf
-	./nginx-reload.sh
+	cp nginx/reasons-api-upstream.conf /usr/local/etc/nginx/servers/nginx.conf
+	nginx/reload.sh
 
 set-reasons-api-v2-location:
-	cp nginx-config/reasons-api-v2.conf /usr/local/etc/nginx/servers/nginx.conf
-	./nginx-reload.sh
+	cp nginx/reasons-api-v2.conf /usr/local/etc/nginx/servers/nginx.conf
+	nginx/reload.sh
+
+
+set-reasons-api-ha:
+	cp haproxy/reasons-api.conf /tmp/haproxy.conf
+	haproxy/reload.sh
+
+set-reasons-api-upstream-ha:
+	cp haproxy/reasons-api-upstream.conf /tmp/haproxy.conf
+	haproxy/reload.sh
+
+set-reasons-api-v2-ha:
+	cp haproxy/reasons-api-v2.conf /tmp/haproxy.conf
+	haproxy/reload.sh
 
 
 # --
@@ -134,7 +176,8 @@ stop: \
 	stop-reasons-api \
 	stop-reasons-api-v2 \
 	stop-holywars-api
-	./nginx-stop.sh
+	nginx/stop.sh
+	haproxy/stop.sh
 
 terminate:
 	killall java

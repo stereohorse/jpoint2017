@@ -18,5 +18,9 @@ ratpack {
 
             render(json([value: randomName]))
         }
+
+        get("health") {
+            render "OK"
+        }
     }
 }

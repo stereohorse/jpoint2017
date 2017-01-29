@@ -27,5 +27,9 @@ ratpack {
 
             render(json([holywar: holywar]))
         }
+
+        get("health") {
+            render "OK"
+        }
     }
 }

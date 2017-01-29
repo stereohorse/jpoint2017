@@ -9,5 +9,9 @@ ratpack {
         get("reason") {
             render(json([value: "мы обновили reasons-api!"]))
         }
+
+        get("health") {
+            render "OK"
+        }
     }
 }
