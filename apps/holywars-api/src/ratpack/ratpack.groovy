@@ -1,16 +1,19 @@
-import com.fasterxml.jackson.databind.ObjectMapper
-
 import static ratpack.groovy.Groovy.ratpack
 import static ratpack.handling.RequestLogger.ncsa
 import static ratpack.jackson.Jackson.json
+import static ru.stereohorse.jpoint2017.Utils.readJsonVal
 
-
-def readJsonVal = { String jsonStr ->
-    new ObjectMapper().readTree(jsonStr).get("value").toString().replace("\"", "")
-}
 
 def namesApiUrl = (System.getenv("NAMES_API_ENDPOINT") + "/name").toURL()
-def reasonsApiUrl = (System.getenv("REASONS_API_ENDPOINT") + "/reason").toURL()
+
+
+def reasons = [
+    "не тормозит хотя бы",
+    "меньше кушает памяти",
+    "доки нормальные"
+]
+
+def random = new Random()
 
 
 ratpack {
@@ -21,15 +24,11 @@ ratpack {
             def name1 = readJsonVal namesApiUrl.text
             def name2 = readJsonVal namesApiUrl.text
 
-            def reason = readJsonVal reasonsApiUrl.text
+            def reason = reasons[random.nextInt(reasons.size())]
 
             def holywar = "${name1} круче чем ${name2}, потому что ${reason}".toString()
 
             render(json([holywar: holywar]))
-        }
-
-        get("health") {
-            render "OK"
         }
     }
 }

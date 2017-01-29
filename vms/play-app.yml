@@ -1,0 +1,21 @@
+- hosts: vm1
+  tasks:
+    - name: deploy names-api
+      docker_container:
+        image: 0x06065a/jpoint2017-names-api:2
+        name: names-api
+        pull: yes
+        ports:
+          - "5040:5050"
+      tags: names-api
+
+    - name: deploy holywars-api
+      docker_container:
+        image: 0x06065a/jpoint2017-holywars-api:1
+        name: holywars-api
+        pull: yes
+        ports:
+          - "5050:5050"
+        env:
+          NAMES_API_ENDPOINT: http://192.168.5.2:5040
+      tags: holywars-api

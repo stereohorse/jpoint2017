@@ -11,7 +11,6 @@ buildscript {
 apply plugin: "io.ratpack.ratpack-groovy"
 
 run {
-    jvmArgs "-Dratpack.port=5051"
     systemProperty "ratpack.reloadable", "true"
 }
 

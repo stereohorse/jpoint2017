@@ -1,0 +1,252 @@
+root@vagrant-ubuntu-trusty-64:/var/lib/docker/containers/fe306e5e9d6e3441abdc9d576318c91302224eb8ca5ab25fc8a9778b2c31af35# cat fe306e5e9d6e3441abdc9d576318c91302224eb8ca5ab25fc8a9778b2c31af35-json.log | grep Exception
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:40.116669637Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:40.129258988Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:40.153989619Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:40.169920789Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:40.190084613Z"}
+{"log":"java.net.SocketException: Connection reset by peer (connect failed)\n","stream":"stderr","time":"2017-01-29T22:09:40.211451385Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.230206688Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.249501578Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.269740515Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.291104072Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.310235023Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.329781803Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.350594609Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.370473309Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.390778669Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.409760953Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.430258044Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.449665687Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.469490696Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.489713026Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.509330175Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.531176426Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.549977163Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.57048651Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.589038476Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.609982875Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.634145917Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.649578394Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.675641262Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.688655279Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.708499521Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.728590662Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.749637838Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.772343193Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.794147071Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.809341233Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.829353479Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.85279786Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.869089736Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.889622647Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.913439125Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.931824326Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.963264166Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:40.994383533Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.010592902Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.012583861Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.030024292Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.05010226Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.069451121Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.091967656Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.114998796Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.129779809Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.150602438Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.170947024Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.189496305Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.210300506Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.229456631Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.249421496Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.271754763Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.301862128Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.308993088Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.331050256Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.350618389Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.369674447Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.390516074Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.411758577Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.430273906Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.450364317Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.470985977Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.492897406Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.518885765Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.536022926Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.549697024Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.605183048Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.605537602Z"}
+{"log":"java.net.ConnectException: Connection refused (Connection refused)\n","stream":"stderr","time":"2017-01-29T22:09:41.60990072Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.665187536Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.673847985Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:42.685679195Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.697017835Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.715629344Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.717931075Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.727498602Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.731696064Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.731985379Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.732752245Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.736094631Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.740590358Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.741903494Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.74222599Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.752779037Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.754869906Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.757427051Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.761769501Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.768796899Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.76985129Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.772608411Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.774142193Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.777052656Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.77756017Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.781169349Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.783381888Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.788396695Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.798172494Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.80009941Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.802350442Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.807467704Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.811367732Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.814427807Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.817474458Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.818546282Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.820945203Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.82503906Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.82753699Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.830709824Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.837537372Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.841598342Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.843231467Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.846591323Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.851297782Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.855057787Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.856799515Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.85836815Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.864030261Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.86670804Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.868913941Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.871320847Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.875834051Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.879105752Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.881807026Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.884067835Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.887916477Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.891673869Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.895169576Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.898545374Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.900111079Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.902340501Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.906430326Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.908587853Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.911610422Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.914046736Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.929510843Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:42.950944776Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.969771473Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:42.990221222Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.010582332Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.030107518Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.050514438Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.070657761Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.096627946Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.11830372Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.136747649Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.157633408Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.17666125Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.194023113Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.211656366Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.230007655Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.249676984Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.270222189Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.289726786Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.310326507Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.330440141Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.352979643Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.370764595Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.392046717Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.413334108Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.436555955Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.455548649Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.473674625Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.492977475Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.510929279Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.533050688Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.551481216Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.569906379Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.590435055Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.610275585Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.629904805Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.658587565Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.688881695Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.712628819Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.737190263Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.758540686Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.776193097Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.796613812Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.842302779Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.842610091Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.842929913Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.892783739Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.898025405Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.90454576Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:43.919656922Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.930461015Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.94972362Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.972103478Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:43.995792521Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.010269331Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.030016042Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.049944018Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.069971286Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.089713974Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.109313133Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.129502001Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.150352502Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.168906839Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.195474583Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.219737133Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.231117029Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.250359189Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.270023811Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.290594469Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.316609212Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.33120156Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.35050116Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.370006079Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.39045777Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.412168161Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.429953988Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.450973525Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.475174395Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.491572191Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.515162344Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.53039316Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.550206557Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.569676322Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.590377608Z"}
+{"log":"java.net.SocketException: Unexpected end of file from server\n","stream":"stderr","time":"2017-01-29T22:09:44.609163094Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.630157106Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.650256959Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.671073244Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.689711252Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.709627835Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.730391922Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.750020434Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.770390567Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.789897149Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.810198524Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.830247606Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.850032507Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.870101509Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.890353556Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.909503846Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.930093552Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.948604277Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.97056262Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:44.989925218Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.009417435Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.030247306Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.049914924Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.070047877Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.089283032Z"}
+{"log":"java.net.SocketException: Connection reset\n","stream":"stderr","time":"2017-01-29T22:09:45.110055081Z"}
