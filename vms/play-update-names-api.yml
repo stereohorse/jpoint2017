@@ -1,0 +1,12 @@
+- hosts: vm1
+  tasks:
+    - name: destroy old names-api
+      command: docker rm -f names-api
+
+    - name: start new names-api
+      command: >
+        docker run
+          -d
+          -p 5040:5050
+          --name names-api
+          0x06065a/jpoint2017-names-api:1

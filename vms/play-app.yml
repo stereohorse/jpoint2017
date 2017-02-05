@@ -2,7 +2,7 @@
   tasks:
     - name: deploy names-api
       docker_container:
-        image: 0x06065a/jpoint2017-names-api:2
+        image: 0x06065a/jpoint2017-names-api:1
         name: names-api
         pull: yes
         ports:
