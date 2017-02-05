@@ -1,27 +1,14 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath "io.ratpack:ratpack-gradle:1.4.4"
-    }
+plugins {
+    id 'org.springframework.boot' version '1.5.1.RELEASE'
 }
 
-apply plugin: "io.ratpack.ratpack-groovy"
-
-run {
-    systemProperty "ratpack.reloadable", "true"
-}
-
-task stage {
-    dependsOn installDist
-}
+apply plugin: 'java'
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    runtime "org.slf4j:slf4j-simple:1.7.21"
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok:1.16.12'
 }
