@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.Random;
 
 @Service
-public class NamesGenerator {
+class NamesGenerator {
 
     private static final String[] NAMES = new String[] {
         "JAVA",
@@ -17,7 +17,7 @@ public class NamesGenerator {
     private final Random random = new Random();
 
 
-    public String nextName() {
+    String nextName() {
         return NAMES[random.nextInt(NAMES.length)];
     }
 }

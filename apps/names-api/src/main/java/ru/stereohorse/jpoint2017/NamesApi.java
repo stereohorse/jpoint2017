@@ -17,7 +17,7 @@ public class NamesApi {
     private NamesGenerator namesGenerator;
 
     @RequestMapping("/name")
-    public NameResponse getRandomName() {
+    public NameResponse getName() {
         return new NameResponse(namesGenerator.nextName());
     }
 
