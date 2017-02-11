@@ -4,15 +4,15 @@
     - docker
   tags: docker
 
-- hosts: mesos
-  become: yes
-  roles:
-    - zookeeper-mesos-marathon
-    - marathon-lb
-  tags: mesos
+#- hosts: mesos
+  #become: yes
+  #roles:
+    #- zookeeper-mesos-marathon
+    #- marathon-lb
+  #tags: mesos
 
-- hosts: haproxy
-  become: yes
-  roles:
-    - haproxy
-  tags: haproxy
+#- hosts: haproxy
+  #become: yes
+  #roles:
+    #- haproxy
+  #tags: haproxy
