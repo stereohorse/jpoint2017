@@ -1,0 +1,54 @@
+[
+  {
+    "id": "names-api",
+    "backoffFactor": 2.0,
+    "backoffSeconds": 30,
+    "container": {
+      "docker": {
+        "forcePullImage": true,
+        "image": "0x06065a/jpoint2017-names-api:2",
+        "network": "BRIDGE",
+        "parameters": [
+          {
+            "key": "memory",
+            "value": "300m"
+          }
+        ],
+        "portMappings": [
+          {
+            "containerPort": 8080
+          }
+        ],
+        "privileged": false
+      },
+      "type": "DOCKER"
+    },
+    "cpus": 0.1,
+    "healthChecks": [
+      {
+        "gracePeriodSeconds": 300,
+        "ignoreHttp1xx": false,
+        "intervalSeconds": 5,
+        "maxConsecutiveFailures": 3,
+        "path": "/health",
+        "portIndex": 0,
+        "protocol": "HTTP",
+        "timeoutSeconds": 10
+      }
+    ],
+    "labels": {
+      "DEPLOYMENT_ID": "{{ ansible_date_time.iso8601_micro | to_uuid }}",
+      "HAPROXY_GROUP": "jpoint2017",
+      "HAPROXY_0_VHOST": "names-api.2017.jpoint.ru",
+      "HAPROXY_0_HTTP_BACKEND_PROXYPASS_PATH": "/names-api",
+      "HAPROXY_0_PATH": "/names-api"
+    },
+    "instances": 2,
+    "maxLaunchDelaySeconds": 86400,
+    "mem": 512.0,
+    "upgradeStrategy": {
+      "maximumOverCapacity": 0.5,
+      "minimumHealthCapacity": 1.0
+    }
+  }
+]

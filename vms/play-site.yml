@@ -20,9 +20,9 @@
         state: stopped
   tags: haproxy
 
-#- hosts: mesos
-  #become: yes
-  #roles:
-    #- zookeeper-mesos-marathon
-    #- marathon-lb
-  #tags: mesos
+- hosts: mesos
+  become: yes
+  roles:
+    - zookeeper-mesos-marathon
+    - { role: marathon-lb, tags: mlb }
+  tags: mesos

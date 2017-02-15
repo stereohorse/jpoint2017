@@ -13,10 +13,10 @@
     ports:
       - "9090:9090"
       - "9091:9091"
-      - "81:80"
+      - "80:80"
     env:
       PORTS: 9090
     privileged: yes
     volumes:
       - /etc/marathon-lb/templates:/marathon-lb/templates
-    command: sse --marathon http://{{ ansible_eth1.ipv4.address }}:8080 --group joker2016 --health-check
+    command: sse --marathon http://{{ ansible_eth1.ipv4.address }}:8080 --group jpoint2017 --health-check

@@ -1,0 +1,17 @@
+- hosts: mesos
+  tasks:
+    - name: start names-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/names-api.json.j2') }}"
+        body_format: json
+      tags: names
+
+    - name: start holywars-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/holywars-api.json.j2') }}"
+        body_format: json
+      tags: holywars
