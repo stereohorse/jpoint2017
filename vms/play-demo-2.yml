@@ -1,0 +1,38 @@
+- hosts: vm1
+  become: yes
+  tasks:
+    - name: delete demo-1 names-api
+      command: >
+        docker rm -f names-api
+      ignore_errors: yes
+
+    - name: delete demo-2 names-api-old
+      command: >
+        docker rm -f names-api-old
+      ignore_errors: yes
+
+    - name: delete demo-2 names-api-new
+      command: >
+        docker rm -f names-api-new
+      ignore_errors: yes
+
+    - name: kill all haproxies
+      command: killall -9 haproxy
+      ignore_errors: yes
+
+
+    - name: copy config with old app
+      copy:
+        src: haproxy-old-app.conf
+        dest: /var/haproxy.conf
+
+    - name: start haproxy
+      command: haproxy -D -f /var/haproxy.conf -p /var/haproxy.pid
+
+    - name: start old names-api
+      command: >
+        docker run
+          -d
+          -p 8082:8080
+          --name names-api-old
+          0x06065a/jpoint2017-names-api:1

@@ -21,6 +21,10 @@ public class NamesApi {
         return new NameResponse(namesGenerator.nextName());
     }
 
+    @RequestMapping("/health")
+    public String getHealth() {
+        return "OK";
+    }
 
     public static void main(String... args) {
         SpringApplication.run(NamesApi.class, args);

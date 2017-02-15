@@ -1,5 +1,12 @@
 - hosts: vm1
+  become: yes
   tasks:
+
+    - name: clean sandbox
+      command: killall -9 haproxy
+      ignore_errors: yes
+
+
     - name: deploy names-api
       docker_container:
         image: 0x06065a/jpoint2017-names-api:1
@@ -19,4 +26,3 @@
         env:
           API_NAMES_URL: "http://{{ ansible_default_ipv4.address }}:8080/name"
       tags: holywars-api
-

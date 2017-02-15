@@ -8,9 +8,16 @@ import java.util.Random;
 class NamesGenerator {
 
     private static final String[] NAMES = new String[] {
-        "JAVA",
-        "NODEJS",
-        "ПЕЧЕНЬКА"
+        "Java",
+        "NodeJS",
+        "печенька",
+        "Clojure",
+        "singleton",
+        "heap",
+        "hashmap",
+        "Hazelcast",
+        "Gradle",
+        "Maven"
     };
 
 

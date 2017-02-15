@@ -1,0 +1,30 @@
+- hosts: vm1
+  become: yes
+  tasks:
+    # -- 1
+    - name: start new names-api
+      command: >
+        docker run
+          -d
+          -p 8083:8080
+          --name names-api-new
+          0x06065a/jpoint2017-names-api
+      tags: p1
+
+
+    # -- 2
+    - name: copy config with new app
+      copy:
+        src: haproxy-new-app.conf
+        dest: /var/haproxy.conf
+      tags: p2
+
+    - name: restart haproxy
+      shell: haproxy -D -f /var/haproxy.conf -p /var/haproxy.pid -sf `cat /var/haproxy.pid`
+      tags: p2
+
+
+    # -- 3
+    - name: stop old names-api
+      command: docker rm -f names-api-old
+      tags: p3

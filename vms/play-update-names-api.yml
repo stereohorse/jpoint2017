@@ -9,4 +9,4 @@
           -d
           -p 8080:8080
           --name names-api
-          0x06065a/jpoint2017-names-api
+          0x06065a/jpoint2017-names-api:1
