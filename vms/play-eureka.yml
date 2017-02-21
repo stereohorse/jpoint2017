@@ -1,0 +1,28 @@
+- hosts: mesos
+  become: yes
+  tasks:
+
+    - name: start eureka-server
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/eureka-server.json.j2') }}"
+        body_format: json
+      tags: eureka
+
+    - name: start names-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/names-api-eureka.json.j2') }}"
+        body_format: json
+      tags: names
+
+
+    - name: start holywars-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/holywars-api-eureka.json.j2') }}"
+        body_format: json
+      tags: holywars

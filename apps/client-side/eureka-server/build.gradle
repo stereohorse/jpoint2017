@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-docker-plugin:3.0.5'
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '1.5.1.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'spring-boot'
+apply plugin: 'eclipse'
+apply plugin: 'com.bmuschko.docker-java-application'
+
+mainClassName = 'ru.stereohorse.jpoint2017.eurekaserver.EurekaServer'
+
+docker {
+    javaApplication {
+        ports = [8761]
+        tag = '0x06065a/jpoint2017-eureka-server'
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR5'
+    }
+}
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
+}

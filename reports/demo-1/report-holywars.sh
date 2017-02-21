@@ -9,7 +9,7 @@ sleep 1
 # -- stress test
 
 # initiate app update
-(cd ../../vms && ansible-playbook -i vagrant play-update-names-api.yml && echo "==> app updated") &
+(cd ../../vms && ansible-playbook -i vagrant play-update-names-api-demo-1.yml && echo "==> app updated") &
 
 # simulate load
 REPORT_NAME=holywars-api
