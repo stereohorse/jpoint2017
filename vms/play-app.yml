@@ -6,6 +6,11 @@
       command: killall -9 haproxy
       ignore_errors: yes
 
+    - name: clean containers
+      command: docker rm -f names-api-old names-api-new
+      ignore_errors: yes
+
+
 
     - name: deploy names-api
       docker_container:
