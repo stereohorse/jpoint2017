@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cards-api",
+    "backoffFactor": 2.0,
+    "backoffSeconds": 30,
+    "container": {
+      "docker": {
+        "forcePullImage": true,
+        "image": "0x06065a/jpoint2017-cards-api:0.0.1",
+        "network": "BRIDGE",
+        "parameters": [
+          {
+            "key": "memory",
+            "value": "500m"
+          }
+        ],
+        "portMappings": [
+          {
+            "containerPort": 8081
+          }
+        ],
+        "privileged": false
+      },
+      "type": "DOCKER"
+    },
+    "cpus": 0.1,
+    "healthChecks": [
+      {
+        "gracePeriodSeconds": 300,
+        "ignoreHttp1xx": false,
+        "intervalSeconds": 5,
+        "maxConsecutiveFailures": 3,
+        "path": "/health",
+        "portIndex": 0,
+        "protocol": "HTTP",
+        "timeoutSeconds": 10
+      }
+    ],
+    "env": {
+      "transactionsApi.url": "http://{{ ansible_eth1.ipv4.address }}/transactions-api/transactions"
+    },
+    "labels": {
+      "DEPLOYMENT_ID": "{{ ansible_date_time.iso8601_micro | to_uuid }}",
+      "HAPROXY_GROUP": "jpoint2017",
+      "HAPROXY_0_VHOST": "cards-api.2017.jpoint.ru",
+      "HAPROXY_0_HTTP_BACKEND_PROXYPASS_PATH": "/cards-api",
+      "HAPROXY_0_PATH": "/cards-api"
+    },
+    "instances": 1,
+    "maxLaunchDelaySeconds": 86400,
+    "mem": 512.0,
+    "upgradeStrategy": {
+      "maximumOverCapacity": 0.5,
+      "minimumHealthCapacity": 1.0
+    }
+  }
+]

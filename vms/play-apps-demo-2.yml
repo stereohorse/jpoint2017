@@ -1,0 +1,28 @@
+- hosts: vm1
+  become: yes
+  tasks:
+    - name: delete demo-1 transactions-api
+      command: >
+        docker rm -f transactions-api transactions-api-old transactions-api-new
+      ignore_errors: yes
+
+    - name: kill all haproxies
+      command: killall -9 haproxy
+      ignore_errors: yes
+
+
+    - name: copy config with old app
+      copy:
+        src: haproxy-old-app.conf
+        dest: /var/haproxy.conf
+
+    - name: start haproxy
+      command: haproxy -D -f /var/haproxy.conf -p /var/haproxy.pid
+
+    - name: start old transactions-api
+      command: >
+        docker run
+          -d
+          -p 8082:8080
+          --name transactions-api-old
+          0x06065a/jpoint2017-transactions-api:0.0.1

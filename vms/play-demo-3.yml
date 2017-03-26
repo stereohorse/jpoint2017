@@ -1,6 +1,7 @@
 - hosts: vm1
   become: yes
   tasks:
+
     # -- 1
     - name: start new transactions-api
       command: >
@@ -9,22 +10,27 @@
           -p 8083:8080
           --name transactions-api-new
           0x06065a/jpoint2017-transactions-api:0.0.2
-      tags: p1
 
 
     # -- 2
+    - name: wait for healthcheck
+      shell: curl http://localhost:8083/health
+      register: result
+      until: result.stdout.find("OK") != -1
+      retries: 10
+      delay: 1
+
+
+    # -- 3
     - name: copy config with new app
       copy:
         src: haproxy-new-app.conf
         dest: /var/haproxy.conf
-      tags: p2
 
     - name: restart haproxy
       shell: haproxy -D -f /var/haproxy.conf -p /var/haproxy.pid -sf `cat /var/haproxy.pid`
-      tags: p2
 
 
-    # -- 3
+    # -- 4
     - name: stop old transactions-api
       command: docker rm -f transactions-api-old
-      tags: p3

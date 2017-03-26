@@ -1,0 +1,12 @@
+- hosts: vm1
+  tasks:
+    - name: destroy old transactions-api
+      command: docker rm -f transactions-api
+
+    - name: start new transactions-api
+      command: >
+        docker run
+          -d
+          -p 8080:8080
+          --name transactions-api
+          0x06065a/jpoint2017-transactions-api:0.0.2

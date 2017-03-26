@@ -1,0 +1,18 @@
+- hosts: mesos
+  tasks:
+    - name: start transactions-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/transactions-api.json.j2') }}"
+        body_format: json
+      tags: transactions
+
+
+    - name: start cards-api
+      uri:
+        url: "http://localhost:8080/v2/apps?force=true"
+        method: PUT
+        body: "{{ lookup('template','templates/cards-api.json.j2') }}"
+        body_format: json
+      tags: cards

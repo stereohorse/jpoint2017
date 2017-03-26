@@ -1,0 +1,33 @@
+- hosts: vm1
+  become: yes
+  tasks:
+
+    - name: clean haproxy
+      command: killall -9 haproxy
+      ignore_errors: yes
+
+    - name: clean containers
+      command: docker rm -f transactions-api-old transactions-api-new
+      ignore_errors: yes
+
+
+
+    - name: deploy transactions-api
+      docker_container:
+        image: 0x06065a/jpoint2017-transactions-api:0.0.1
+        name: transactions-api
+        pull: yes
+        ports:
+          - "8080:8080"
+      tags: transactions-api
+
+    - name: deploy cards-api
+      docker_container:
+        image: 0x06065a/jpoint2017-cards-api:0.0.1
+        name: cards-api
+        pull: yes
+        ports:
+          - "8081:8081"
+        env:
+          transactionsApi.url: "http://{{ ansible_default_ipv4.address }}:8080/transactions"
+      tags: cards-api
