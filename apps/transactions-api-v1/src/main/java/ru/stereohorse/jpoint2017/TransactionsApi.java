@@ -3,6 +3,7 @@ package ru.stereohorse.jpoint2017;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,15 +19,16 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @Slf4j
 public class TransactionsApi {
 
+    @Autowired
+    private TransactionsService transactionsService;
+
+
     @RequestMapping(value = "/transactions", method = POST)
-    public String makeTransaction(@RequestBody Transaction transaction) {
+    public void makeTransaction(@RequestBody Transaction transaction) {
 
         log.info("v1 processing {}", transaction);
 
-        return format("transacted %s rub from %s to %s",
-                transaction.getAmount(),
-                transaction.getFromUser(),
-                transaction.getToUser());
+        transactionsService.makeTransaction(transaction);
     }
 
 
