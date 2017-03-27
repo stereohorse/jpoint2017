@@ -6,12 +6,12 @@
     "container": {
       "docker": {
         "forcePullImage": true,
-        "image": "0x06065a/jpoint2017-cards-api:0.0.1",
+        "image": "0x06065a/jpoint2017-cards-api:0.0.2",
         "network": "BRIDGE",
         "parameters": [
           {
             "key": "memory",
-            "value": "500m"
+            "value": "900m"
           }
         ],
         "portMappings": [
@@ -48,7 +48,7 @@
     },
     "instances": 1,
     "maxLaunchDelaySeconds": 86400,
-    "mem": 512.0,
+    "mem": 1024.0,
     "upgradeStrategy": {
       "maximumOverCapacity": 0.5,
       "minimumHealthCapacity": 1.0
