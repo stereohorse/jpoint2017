@@ -10,10 +10,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
+
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 
 @SpringBootApplication
@@ -31,7 +34,7 @@ public class CardsApi {
     private RestTemplate restClient = new RestTemplate();
 
 
-    @RequestMapping("/transactions")
+    @RequestMapping(value = "/transactions", method = POST)
     public void makeTransaction(@RequestBody CardToCardTransaction transaction) {
 
         log.info("processing {}", transaction);
