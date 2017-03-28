@@ -7,7 +7,7 @@ import static java.lang.String.format;
 @Repository
 public class CardsStorage {
 
-    String userOf(String card) {
+    String accountOf(String card) {
         return format("[user of card %s]", card);
     }
 }
