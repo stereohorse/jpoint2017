@@ -40,8 +40,8 @@ public class TransactionsApi {
 @Data
 class Transaction {
 
-    private String fromUser;
-    private String toUser;
+    private String fromAccount;
+    private String toAccount;
 
     private String amount;
 }

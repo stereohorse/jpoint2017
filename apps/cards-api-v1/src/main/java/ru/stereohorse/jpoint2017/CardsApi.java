@@ -38,13 +38,13 @@ public class CardsApi {
 
         log.info("processing {}", transaction);
 
-        sendTransaction(new UserToUserTransaction()
+        sendTransaction(new Transaction()
             .setAmount(transaction.getAmount())
-            .setFromUser(cardsStorage.userOf(transaction.getFromCard()))
-            .setToUser(cardsStorage.userOf(transaction.getToCard())));
+            .setFromAccount(cardsStorage.accountOf(transaction.getFromCard()))
+            .setToAccount(cardsStorage.accountOf(transaction.getToCard())));
     }
 
-    private void sendTransaction(UserToUserTransaction transaction) {
+    private void sendTransaction(Transaction transaction) {
         restClient.postForLocation(URI.create(transactionsApiUrl), transaction);
     }
 
@@ -66,10 +66,10 @@ class CardToCardTransaction {
 
 @Data
 @Accessors(chain = true)
-class UserToUserTransaction {
+class Transaction {
 
-    private String fromUser;
-    private String toUser;
+    private String fromAccount;
+    private String toAccount;
 
     private String amount;
 }
