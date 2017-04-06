@@ -16,7 +16,7 @@ $ vagrant up
 
 ## Demos
 
-Prepared demo results are situated in dirs `demo-\[1-5\]/out/`.
+Prepared demo results are situated in dirs `demo-[1-5]/out/`.
 
 ### In-place update
 
