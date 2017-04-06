@@ -3,7 +3,7 @@
 # -- warm up
 echo "==> warming up"
 echo "POST http://vm1:8081/transactions" \
-  | vegeta attack -header "Content-Type: application/json" -body ../body.json -duration=10s \
+  | vegeta attack -header "Content-Type: application/json" -body ../body.json -duration=3s \
   | vegeta report
 sleep 1
 
